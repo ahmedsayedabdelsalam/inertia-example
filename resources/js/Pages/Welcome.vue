@@ -9,7 +9,7 @@
           >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi possimus impedit dolorem reprehenderit odio repellendus, iusto eveniet eaque, nihil quam cumque fugit non iure quis fuga placeat tempore adipisci similique.</div>
         </el-col>
       </el-row>
-      <el-button type="primay">a7a</el-button>
+      <el-button type="primay">Button</el-button>
       <el-table
         :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()))"
         style="width: 100%"
