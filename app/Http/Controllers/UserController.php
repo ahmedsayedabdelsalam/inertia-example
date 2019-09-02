@@ -72,9 +72,11 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        return Inertia::render('Users/Edit', [
+            'user' => $user
+        ]);
     }
 
     /**
@@ -84,9 +86,19 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|unique:users,email,' . $user->id
+        ]);
+
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email
+        ]);
+
+        return redirect()->route('users.index')->with('successMessage', 'User was successfully updated!');
     }
 
     /**
@@ -95,8 +107,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $user)
     {
-        //
+        $user->delete();
+
+        return redirect()->route('users.index')->with('successMessage', 'User was successfully deleted');
     }
 }

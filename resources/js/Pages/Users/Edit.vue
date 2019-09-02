@@ -5,7 +5,7 @@
                 <div v-if="Object.keys(errors).length > 0" class="alert alert-danger mt-4">
                     {{ errors[Object.keys(errors)[0]][0] }}
                 </div>
-                <form action="/users" method="POST" class="my-5" @submit.prevent="createUser">
+                <form :action="`/users/${user.id}`" method="PUT" class="my-5" @submit.prevent="updateUser">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Name" v-model="form.name">
@@ -18,8 +18,20 @@
                         <label for="password">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="Password" v-model="form.password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Create User</button>
+                    <button type="submit" class="btn btn-primary" :disabled="loading">
+                        <half-circle-spinner
+                            v-if="loading"
+                            :animation-duration="1000"
+                            :size="20"
+                            color="#fff"
+                            class="mr-2 mt-2 d-inline-block"
+                        >
+                        </half-circle-spinner>
+                        <span>Update User</span>
+                    </button>
                 </form>
+
+                <button class="tn btn-danger" @click="deleteUser">Delete User</button>
             </div>
         </div>
    </layout>
@@ -27,14 +39,17 @@
 
 <script>
 import Layout from '@/Shared/Layout'
+import { HalfCircleSpinner } from 'epic-spinners'
 
 export default {
     components: {
         Layout,
+        HalfCircleSpinner
     },
-    props: ['errors'],
+    props: ['user', 'errors'],
     data() {
         return {
+            loading: false,
             form: {
                 name: '',
                 email: '',
@@ -43,11 +58,20 @@ export default {
         }
     },
     methods: {
-        createUser() {
-            this.$inertia.post('/users', this.form)
+        updateUser() {
+            this.loading = true;
+            this.$inertia.patch(`/users/${this.user.id}`, this.form)
                 .then(() => {
-                    
+                    this.loading = false;
                 })
+        },
+        deleteUser() {
+            if (confirm('Are you sure you want to delte this contact ?')) {
+                this.$inertia.delete(`/users/${this.user.id}`)
+                    .then(() => {
+
+                    })
+            }
         }
     }
 }

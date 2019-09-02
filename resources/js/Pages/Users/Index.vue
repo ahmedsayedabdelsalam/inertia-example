@@ -1,6 +1,10 @@
 <template>
    <layout>
         <div class="container">
+            <div v-if="successMessage" class="alert alert-success mt-4">
+                {{ successMessage }}
+            </div>
+
             <div class="my-5">
                 <a href="/users/create" class="btn btn-primary">Create User</a>
             </div>
@@ -33,6 +37,6 @@ export default {
     components: {
         Layout,
     },
-    props: ['users']
+    props: ['users', 'successMessage']
 }
 </script>

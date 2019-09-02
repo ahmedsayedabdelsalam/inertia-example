@@ -38,12 +38,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['users']
+  props: ['users', 'successMessage']
 });
 
 /***/ }),
@@ -65,6 +69,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("layout", [
     _c("div", { staticClass: "container" }, [
+      _vm.successMessage
+        ? _c("div", { staticClass: "alert alert-success mt-4" }, [
+            _vm._v(
+              "\n             " + _vm._s(_vm.successMessage) + "\n         "
+            )
+          ])
+        : _vm._e(),
+      _vm._v(" "),
       _c("div", { staticClass: "my-5" }, [
         _c(
           "a",
