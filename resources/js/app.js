@@ -1,7 +1,9 @@
 import { InertiaApp } from '@inertiajs/inertia-vue'
+import ElementUI from 'element-ui';
 import Vue from 'vue'
 
 Vue.use(InertiaApp)
+Vue.use(ElementUI)
 
 const app = document.getElementById('app')
 

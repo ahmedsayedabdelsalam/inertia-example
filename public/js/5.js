@@ -18,12 +18,70 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['foo']
+  props: ["foo"],
+  data: function data() {
+    return {
+      tableData: [{
+        date: '2016-05-03',
+        name: 'Tom',
+        address: 'No. 189, Grove St, Los Angeles'
+      }, {
+        date: '2016-05-02',
+        name: 'John',
+        address: 'No. 189, Grove St, Los Angeles'
+      }, {
+        date: '2016-05-04',
+        name: 'Morgan',
+        address: 'No. 189, Grove St, Los Angeles'
+      }, {
+        date: '2016-05-01',
+        name: 'Jessy',
+        address: 'No. 189, Grove St, Los Angeles'
+      }],
+      search: ''
+    };
+  },
+  methods: {
+    handleEdit: function handleEdit(index, row) {
+      console.log(index, row);
+    },
+    handleDelete: function handleDelete(index, row) {
+      console.log(index, row);
+    }
+  }
 });
 
 /***/ }),
@@ -44,11 +102,104 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("layout", [
-    _c("div", [
-      _vm._v(
-        "\n         This is the welocme Page " + _vm._s(_vm.foo) + "\n     "
-      )
-    ])
+    _c(
+      "div",
+      [
+        _vm._v("\n    This is the welocme Page " + _vm._s(_vm.foo) + "\n    "),
+        _c(
+          "el-row",
+          [
+            _c("el-col", { attrs: { span: 24 } }, [
+              _c("div", { staticClass: "grid-content bg-purple-dark" }, [
+                _vm._v(
+                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi possimus impedit dolorem reprehenderit odio repellendus, iusto eveniet eaque, nihil quam cumque fugit non iure quis fuga placeat tempore adipisci similique."
+                )
+              ])
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("el-button", { attrs: { type: "primay" } }, [_vm._v("a7a")]),
+        _vm._v(" "),
+        _c(
+          "el-table",
+          {
+            staticStyle: { width: "100%" },
+            attrs: {
+              data: _vm.tableData.filter(function(data) {
+                return (
+                  !_vm.search ||
+                  data.name.toLowerCase().includes(_vm.search.toLowerCase())
+                )
+              })
+            }
+          },
+          [
+            _c("el-table-column", { attrs: { label: "Date", prop: "date" } }),
+            _vm._v(" "),
+            _c("el-table-column", { attrs: { label: "Name", prop: "name" } }),
+            _vm._v(" "),
+            _c("el-table-column", {
+              attrs: { align: "right" },
+              scopedSlots: _vm._u([
+                {
+                  key: "header",
+                  fn: function(scope) {
+                    return [
+                      _c("el-input", {
+                        attrs: { size: "mini", placeholder: "Type to search" },
+                        model: {
+                          value: _vm.search,
+                          callback: function($$v) {
+                            _vm.search = $$v
+                          },
+                          expression: "search"
+                        }
+                      })
+                    ]
+                  }
+                },
+                {
+                  key: "default",
+                  fn: function(scope) {
+                    return [
+                      _c(
+                        "el-button",
+                        {
+                          attrs: { size: "mini" },
+                          on: {
+                            click: function($event) {
+                              return _vm.handleEdit(scope.$index, scope.row)
+                            }
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-button",
+                        {
+                          attrs: { size: "mini", type: "danger" },
+                          on: {
+                            click: function($event) {
+                              return _vm.handleDelete(scope.$index, scope.row)
+                            }
+                          }
+                        },
+                        [_vm._v("Delete")]
+                      )
+                    ]
+                  }
+                }
+              ])
+            })
+          ],
+          1
+        )
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = []
