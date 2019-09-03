@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Layout from '@/Shared/Layout'
+import Layout from '@/Layout/Layout'
 
 export default {
     components: {

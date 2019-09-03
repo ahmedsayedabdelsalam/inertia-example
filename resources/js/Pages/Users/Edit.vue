@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import Layout from '@/Shared/Layout'
+import Layout from '@/Layout/Layout'
 import { HalfCircleSpinner } from 'epic-spinners'
 
 export default {
