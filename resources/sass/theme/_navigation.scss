@@ -1,0 +1,33 @@
+.theme-nav {
+    background: $nav_background;
+    border-bottom: none !important;
+}
+
+.el-menu-item,
+.el-submenu .el-submenu__title {
+    color: $nav_color !important;
+
+    &:hover {
+        color: #FFCF40 !important;
+        border-bottom-color: $nav_color !important;
+        background-color: inherit !important;
+        text-decoration: none !important;
+    }
+}
+
+.theme-sidebar {
+    background: $sidebar_background;
+}
+
+
+.el-menu--horizontal .el-menu {
+    background: $sidebar_background !important;
+
+    .el-submenu, .el-menu-item {
+        background: $sidebar_background !important;
+
+        .el-submenu__title {
+            background: $sidebar_background !important;
+        }
+    }
+}
