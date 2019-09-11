@@ -26,10 +26,13 @@
     },
     "dependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@fortawesome/vue-fontawesome": "^0.1.7",
         "@inertiajs/inertia": "^0.1.3",
         "@inertiajs/inertia-vue": "^0.1.1",
         "bootstrap-vue": "^2.0.0-rc.28",
+        "chart.js": "^2.8.0",
         "element-ui": "^2.12.0",
-        "epic-spinners": "^1.1.0"
+        "epic-spinners": "^1.1.0",
+        "vue-chartjs": "^3.4.2"
     }
 }
