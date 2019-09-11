@@ -21,12 +21,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Sidebar: _partials_Sidebar__WEBPACK_IMPORTED_MODULE_0__["default"],
     Navbar: _partials_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  data: function data() {
+    return {
+      isCollapse: false,
+      items: [{
+        text: "Dashboard",
+        href: "/"
+      }]
+    };
   }
 });
 
@@ -74,69 +88,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      activeIndex: "1",
+      activeIndex2: "1"
+    };
+  },
+  methods: {
+    handleSelect: function handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    }
+  }
+});
 
 /***/ }),
 
@@ -190,690 +154,119 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    isCollapse: {
+      "default": false,
+      type: Boolean
+    }
+  },
+  methods: {
+    handleOpen: function handleOpen(key, keyPath) {},
+    handleClose: function handleClose(key, keyPath) {},
+    toggleMenu: function toggleMenu() {
+      $this.isCollapse = !$this.isCollapse;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.content {\n  display: flex;\n}\n.right {\n  width: 100%;\n  padding: 1em;\n  background-color: #f5f5f5;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.el-menu-vertical-demo:not(.el-menu--collapse) {\n  width: 200px;\n}\n.el-menu-vertical-demo.theme-sidebar {\n  height: 100vh;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Layout.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./Sidebar.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -895,11 +288,38 @@ var render = function() {
   return _c(
     "main",
     [
-      _c("navbar"),
+      _c("navbar", {
+        on: {
+          changeNavCollapse: function($event) {
+            _vm.isCollapse = !_vm.isCollapse
+          }
+        }
+      }),
       _vm._v(" "),
-      _c("sidebar"),
-      _vm._v(" "),
-      _c("article", [_vm._t("default")], 2)
+      _c(
+        "div",
+        { staticClass: "content" },
+        [
+          _c("sidebar", { attrs: { isCollapse: _vm.isCollapse } }),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "right" },
+            [
+              _c("b-breadcrumb", { attrs: { items: _vm.items } }),
+              _vm._v(" "),
+              _c(
+                "b-container",
+                { staticClass: "bv-example-row", attrs: { fluid: "" } },
+                [_vm._t("default")],
+                2
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
     ],
     1
   )
@@ -926,295 +346,99 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      {
-        staticClass: "i-layout-inside ivu-layout i-layout-inside-fix-with-sider"
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass:
-              "i-layout-header ivu-layout-header i-layout-header-color-primary i-layout-header-fix i-layout-header-with-menu",
-            staticStyle: { width: "calc(100% - 180px)" }
+  return _c(
+    "div",
+    [
+      _c(
+        "el-menu",
+        {
+          staticClass: "el-menu-demo theme-nav",
+          attrs: {
+            "default-active": _vm.activeIndex2,
+            mode: "horizontal",
+            "text-color": "#fff",
+            "active-text-color": "#ffd04b"
           },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c("div", { staticClass: "i-layout-menu-head" }, [
+          on: { select: _vm.handleSelect }
+        },
+        [
+          _c("el-menu-item", { attrs: { index: "1" } }, [
+            _vm._v("Processing Center")
+          ]),
+          _vm._v(" "),
+          _c(
+            "el-menu-item",
+            {
+              attrs: { index: "2" },
+              on: {
+                click: function($event) {
+                  return _vm.$emit("changeNavCollapse")
+                }
+              }
+            },
+            [_c("i", { staticClass: "ivu-icon i-icon i-icon-menu-fold" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "el-submenu",
+            { attrs: { index: "3" } },
+            [
+              _c("template", { slot: "title" }, [_vm._v("Workspace")]),
+              _vm._v(" "),
+              _c("el-menu-item", { attrs: { index: "2-1" } }, [
+                _vm._v("item one")
+              ]),
+              _vm._v(" "),
+              _c("el-menu-item", { attrs: { index: "2-2" } }, [
+                _vm._v("item two")
+              ]),
+              _vm._v(" "),
+              _c("el-menu-item", { attrs: { index: "2-3" } }, [
+                _vm._v("item three")
+              ]),
+              _vm._v(" "),
               _c(
-                "ul",
-                { staticClass: "ivu-menu ivu-menu-light ivu-menu-horizontal" },
+                "el-submenu",
+                { attrs: { index: "2-4" } },
                 [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
-                      attrs: { href: "/pro", target: "_self" }
-                    },
-                    [
-                      _c("div", { staticClass: "i-layout-menu-head-title" }, [
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          { staticClass: "i-layout-menu-head-title-text" },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [
-                                _c(
-                                  "font",
-                                  {
-                                    staticStyle: { "vertical-align": "inherit" }
-                                  },
-                                  [_vm._v("iView Pro")]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ]
-                  ),
+                  _c("template", { slot: "title" }, [_vm._v("item four")]),
                   _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "ivu-menu-item",
-                      attrs: { href: "/admin-pro", target: "_self" }
-                    },
-                    [
-                      _c("div", { staticClass: "i-layout-menu-head-title" }, [
-                        _vm._m(3),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          { staticClass: "i-layout-menu-head-title-text" },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [
-                                _c(
-                                  "font",
-                                  {
-                                    staticStyle: { "vertical-align": "inherit" }
-                                  },
-                                  [_vm._v("iView Admin Pro")]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ]
-                  ),
+                  _c("el-menu-item", { attrs: { index: "2-4-1" } }, [
+                    _vm._v("item one")
+                  ]),
                   _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "ivu-menu-item",
-                      attrs: { href: "/store", target: "_self" }
-                    },
-                    [
-                      _c("div", { staticClass: "i-layout-menu-head-title" }, [
-                        _vm._m(4),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          { staticClass: "i-layout-menu-head-title-text" },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [
-                                _c(
-                                  "font",
-                                  {
-                                    staticStyle: { "vertical-align": "inherit" }
-                                  },
-                                  [_vm._v("Material market")]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ]
-                  ),
+                  _c("el-menu-item", { attrs: { index: "2-4-2" } }, [
+                    _vm._v("item two")
+                  ]),
                   _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "ivu-menu-item",
-                      attrs: { href: "/price", target: "_self" }
-                    },
-                    [
-                      _c("div", { staticClass: "i-layout-menu-head-title" }, [
-                        _vm._m(5),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          { staticClass: "i-layout-menu-head-title-text" },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [
-                                _c(
-                                  "font",
-                                  {
-                                    staticStyle: { "vertical-align": "inherit" }
-                                  },
-                                  [_vm._v("price")]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "i-layout-header-right" }, [
-              _c(
-                "span",
-                {
-                  staticClass:
-                    "i-layout-header-trigger i-layout-header-trigger-min"
-                },
-                [
-                  _c("div", { staticClass: "i-layout-header-user" }, [
-                    _vm._m(6),
-                    _vm._v(" "),
-                    _c(
-                      "span",
-                      { staticClass: "i-layout-header-user-name" },
-                      [
-                        _c(
-                          "font",
-                          { staticStyle: { "vertical-align": "inherit" } },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [_vm._v("log in")]
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
+                  _c("el-menu-item", { attrs: { index: "2-4-3" } }, [
+                    _vm._v("item three")
                   ])
-                ]
+                ],
+                2
               )
-            ])
-          ]
-        )
-      ]
-    )
-  ])
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c("el-menu-item", { attrs: { index: "5" } }, [
+            _c(
+              "a",
+              {
+                staticClass: "text-decoration-none",
+                attrs: { href: "https://www.ele.me", target: "_blank" }
+              },
+              [_vm._v("Orders")]
+            )
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-header-trigger" }, [
-      _c("i", {
-        staticClass: "ivu-icon i-icon i-icon-menu-unfold",
-        staticStyle: { display: "none" }
-      }),
-      _vm._v(" "),
-      _c("i", { staticClass: "ivu-icon i-icon i-icon-menu-fold" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "navbar-nav nav" }, [
-      _c("li", { staticClass: "nav-item" }, [
-        _c(
-          "a",
-          {
-            staticClass: "nav-link",
-            attrs: { "data-widget": "pushmenu", href: "#" }
-          },
-          [_c("i", { staticClass: "fa fa-bars" })]
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-head-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon ivu-icon-md-cube" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-head-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon ivu-icon-md-desktop" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-head-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon ivu-icon-md-cart" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-head-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon ivu-icon-md-card" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "span",
-      {
-        staticClass:
-          "ivu-avatar ivu-avatar-circle ivu-avatar-small ivu-avatar-image"
-      },
-      [
-        _c("img", {
-          attrs: { src: "https://dev-file.iviewui.com/avatar_default/avatar" }
-        })
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -1236,1934 +460,128 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      {
-        staticClass:
-          "i-layout-sider ivu-layout-sider i-layout-sider-fix i-layout-sider-dark",
-        staticStyle: {
-          width: "180px",
-          "min-width": "180px",
-          "max-width": "180px",
-          flex: "0 0 180px"
-        }
-      },
-      [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "ivu-layout-sider-children" }, [
-          _c("div", [
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "ul",
-              {
-                staticClass:
-                  "i-layout-menu-side i-scrollbar-hide ivu-menu ivu-menu-dark ivu-menu-vertical",
-                staticStyle: { width: "auto" }
-              },
-              [
-                _c("div", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "ivu-menu-item",
-                      attrs: { href: "/pro/introduce", target: "_self" }
-                    },
-                    [
-                      _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                        _vm._m(2),
+  return _c(
+    "div",
+    { staticClass: "left" },
+    [
+      _c(
+        "el-row",
+        { staticClass: "tac" },
+        [
+          _c(
+            "el-col",
+            { attrs: { span: 3 } },
+            [
+              _c(
+                "el-menu",
+                {
+                  staticClass: "el-menu-vertical-demo theme-sidebar",
+                  attrs: { "default-active": "2", collapse: _vm.isCollapse },
+                  on: { open: _vm.handleOpen, close: _vm.handleClose }
+                },
+                [
+                  _c("el-menu-item", { attrs: { index: "1" } }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+                        attrs: { href: "/" }
+                      },
+                      [
+                        _c("i", { staticClass: "el-icon-odometer" }),
                         _vm._v(" "),
                         _c(
                           "span",
-                          { staticClass: "i-layout-menu-side-title-text" },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [
-                                _c(
-                                  "font",
-                                  {
-                                    staticStyle: { "vertical-align": "inherit" }
-                                  },
-                                  [_vm._v("Introduction")]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
+                          {
+                            staticClass: "i-layout-menu-side-title",
+                            attrs: { slot: "title" },
+                            slot: "title"
+                          },
+                          [_vm._v("Dashboard")]
                         )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", [
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c(
-                    "a",
-                    {
-                      staticClass: "ivu-menu-item",
-                      attrs: { href: "/pro/install", target: "_self" }
-                    },
+                    "el-submenu",
+                    { attrs: { index: "2" } },
                     [
-                      _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                        _vm._m(3),
+                      _c("template", { slot: "title" }, [
+                        _c("i", { staticClass: "el-icon-location" }),
                         _vm._v(" "),
                         _c(
                           "span",
-                          { staticClass: "i-layout-menu-side-title-text" },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [
-                                _c(
-                                  "font",
-                                  {
-                                    staticStyle: { "vertical-align": "inherit" }
-                                  },
-                                  [_vm._v("installation")]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
+                          { attrs: { slot: "title" }, slot: "title" },
+                          [_vm._v("Navigator One")]
                         )
-                      ])
-                    ]
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "el-menu-item-group",
+                        [
+                          _c(
+                            "span",
+                            { attrs: { slot: "title" }, slot: "title" },
+                            [_vm._v("Group One")]
+                          ),
+                          _vm._v(" "),
+                          _c("el-menu-item", { attrs: { index: "1-1" } }, [
+                            _vm._v("item one")
+                          ]),
+                          _vm._v(" "),
+                          _c("el-menu-item", { attrs: { index: "1-2" } }, [
+                            _vm._v("item two")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-menu-item-group",
+                        { attrs: { title: "Group Two" } },
+                        [
+                          _c("el-menu-item", { attrs: { index: "1-3" } }, [
+                            _vm._v("item three")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "el-submenu",
+                        { attrs: { index: "1-4" } },
+                        [
+                          _c(
+                            "span",
+                            { attrs: { slot: "title" }, slot: "title" },
+                            [_vm._v("item four")]
+                          ),
+                          _vm._v(" "),
+                          _c("el-menu-item", { attrs: { index: "1-4-1" } }, [
+                            _vm._v("item one")
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    2
                   )
-                ]),
-                _vm._v(" "),
-                _c("div", [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
-                      attrs: { href: "/pro/changelog", target: "_self" }
-                    },
-                    [
-                      _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                        _vm._m(4),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          { staticClass: "i-layout-menu-side-title-text" },
-                          [
-                            _c(
-                              "font",
-                              { staticStyle: { "vertical-align": "inherit" } },
-                              [
-                                _c(
-                                  "font",
-                                  {
-                                    staticStyle: { "vertical-align": "inherit" }
-                                  },
-                                  [_vm._v("Update log")]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "ivu-menu-submenu" }, [
-                  _c("div", { staticClass: "ivu-menu-submenu-title" }, [
-                    _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                      _vm._m(5),
-                      _vm._v(" "),
-                      _c(
-                        "span",
-                        { staticClass: "i-layout-menu-side-title-text" },
-                        [
-                          _c(
-                            "font",
-                            { staticStyle: { "vertical-align": "inherit" } },
-                            [
-                              _c(
-                                "font",
-                                {
-                                  staticStyle: { "vertical-align": "inherit" }
-                                },
-                                [_vm._v("layout")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass:
-                        "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "ul",
-                    {
-                      staticClass: "ivu-menu",
-                      staticStyle: { display: "none" }
-                    },
-                    [
-                      _c("div", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "ivu-menu-item",
-                            staticStyle: { "padding-left": "43px" },
-                            attrs: { href: "/pro/layout/grid", target: "_self" }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "i-layout-menu-side-title" },
-                              [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                                  },
-                                  [
-                                    _c(
-                                      "font",
-                                      {
-                                        staticStyle: {
-                                          "vertical-align": "inherit"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [_vm._v("Grids")]
-                                        )
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "em",
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "font",
-                                              {
-                                                staticStyle: {
-                                                  "vertical-align": "inherit"
-                                                }
-                                              },
-                                              [_vm._v("Grid")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "ivu-menu-item",
-                            staticStyle: { "padding-left": "43px" },
-                            attrs: {
-                              href: "/pro/layout/description-list",
-                              target: "_self"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "i-layout-menu-side-title" },
-                              [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                                  },
-                                  [
-                                    _c(
-                                      "font",
-                                      {
-                                        staticStyle: {
-                                          "vertical-align": "inherit"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [_vm._v("Description list")]
-                                        )
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "em",
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "font",
-                                              {
-                                                staticStyle: {
-                                                  "vertical-align": "inherit"
-                                                }
-                                              },
-                                              [_vm._v("DescriptionList")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "ivu-menu-item",
-                            staticStyle: { "padding-left": "43px" },
-                            attrs: {
-                              href: "/pro/layout/page-header",
-                              target: "_self"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "i-layout-menu-side-title" },
-                              [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                                  },
-                                  [
-                                    _c(
-                                      "font",
-                                      {
-                                        staticStyle: {
-                                          "vertical-align": "inherit"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [_vm._v("Header")]
-                                        )
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "em",
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "font",
-                                              {
-                                                staticStyle: {
-                                                  "vertical-align": "inherit"
-                                                }
-                                              },
-                                              [_vm._v("PageHeader")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "ivu-menu-item",
-                            staticStyle: { "padding-left": "43px" },
-                            attrs: {
-                              href: "/pro/layout/style",
-                              target: "_self"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "i-layout-menu-side-title" },
-                              [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                                  },
-                                  [
-                                    _c(
-                                      "font",
-                                      {
-                                        staticStyle: {
-                                          "vertical-align": "inherit"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [_vm._v("Basis style")]
-                                        )
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "em",
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "font",
-                                              {
-                                                staticStyle: {
-                                                  "vertical-align": "inherit"
-                                                }
-                                              },
-                                              [_vm._v("Style")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "ivu-menu-submenu" }, [
-                  _c("div", { staticClass: "ivu-menu-submenu-title" }, [
-                    _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                      _vm._m(6),
-                      _vm._v(" "),
-                      _c(
-                        "span",
-                        { staticClass: "i-layout-menu-side-title-text" },
-                        [
-                          _c(
-                            "font",
-                            { staticStyle: { "vertical-align": "inherit" } },
-                            [
-                              _c(
-                                "font",
-                                {
-                                  staticStyle: { "vertical-align": "inherit" }
-                                },
-                                [_vm._v("Component")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass:
-                        "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "ul",
-                    {
-                      staticClass: "ivu-menu",
-                      staticStyle: { display: "none" }
-                    },
-                    [
-                      _c("div", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "ivu-menu-item",
-                            staticStyle: { "padding-left": "43px" },
-                            attrs: {
-                              href: "/pro/component/tree-select",
-                              target: "_self"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "i-layout-menu-side-title" },
-                              [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                                  },
-                                  [
-                                    _c(
-                                      "font",
-                                      {
-                                        staticStyle: {
-                                          "vertical-align": "inherit"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [_vm._v("Tree selection")]
-                                        )
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "em",
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "font",
-                                              {
-                                                staticStyle: {
-                                                  "vertical-align": "inherit"
-                                                }
-                                              },
-                                              [_vm._v("TreeSelect")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "ivu-menu-item",
-                            staticStyle: { "padding-left": "43px" },
-                            attrs: {
-                              href: "/pro/component/tag-select",
-                              target: "_self"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "i-layout-menu-side-title" },
-                              [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                                  },
-                                  [
-                                    _c(
-                                      "font",
-                                      {
-                                        staticStyle: {
-                                          "vertical-align": "inherit"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [_vm._v("Tag selector")]
-                                        )
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "em",
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "font",
-                                              {
-                                                staticStyle: {
-                                                  "vertical-align": "inherit"
-                                                }
-                                              },
-                                              [_vm._v("TagSelect")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "ivu-menu-item",
-                            staticStyle: { "padding-left": "43px" },
-                            attrs: {
-                              href: "/pro/component/city",
-                              target: "_self"
-                            }
-                          },
-                          [
-                            _c(
-                              "span",
-                              { staticClass: "i-layout-menu-side-title" },
-                              [
-                                _c(
-                                  "span",
-                                  {
-                                    staticClass:
-                                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                                  },
-                                  [
-                                    _c(
-                                      "font",
-                                      {
-                                        staticStyle: {
-                                          "vertical-align": "inherit"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [_vm._v("City selector")]
-                                        )
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "em",
-                                      [
-                                        _c(
-                                          "font",
-                                          {
-                                            staticStyle: {
-                                              "vertical-align": "inherit"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "font",
-                                              {
-                                                staticStyle: {
-                                                  "vertical-align": "inherit"
-                                                }
-                                              },
-                                              [_vm._v("City")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _vm._m(7),
-                      _vm._v(" "),
-                      _vm._m(8),
-                      _vm._v(" "),
-                      _vm._m(9),
-                      _vm._v(" "),
-                      _vm._m(10),
-                      _vm._v(" "),
-                      _vm._m(11),
-                      _vm._v(" "),
-                      _vm._m(12),
-                      _vm._v(" "),
-                      _vm._m(13),
-                      _vm._v(" "),
-                      _vm._m(14),
-                      _vm._v(" "),
-                      _vm._m(15),
-                      _vm._v(" "),
-                      _vm._m(16),
-                      _vm._v(" "),
-                      _vm._m(17),
-                      _vm._v(" "),
-                      _vm._m(18),
-                      _vm._v(" "),
-                      _vm._m(19),
-                      _vm._v(" "),
-                      _vm._m(20),
-                      _vm._v(" "),
-                      _vm._m(21),
-                      _vm._v(" "),
-                      _vm._m(22),
-                      _vm._v(" "),
-                      _vm._m(23)
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "ivu-menu-submenu" }, [
-                  _c("div", { staticClass: "ivu-menu-submenu-title" }, [
-                    _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                      _vm._m(24),
-                      _vm._v(" "),
-                      _c(
-                        "span",
-                        { staticClass: "i-layout-menu-side-title-text" },
-                        [
-                          _c(
-                            "font",
-                            { staticStyle: { "vertical-align": "inherit" } },
-                            [
-                              _c(
-                                "font",
-                                {
-                                  staticStyle: { "vertical-align": "inherit" }
-                                },
-                                [_vm._v("instruction")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass:
-                        "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(25)
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "ivu-menu-submenu" }, [
-                  _c("div", { staticClass: "ivu-menu-submenu-title" }, [
-                    _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                      _vm._m(26),
-                      _vm._v(" "),
-                      _c(
-                        "span",
-                        { staticClass: "i-layout-menu-side-title-text" },
-                        [
-                          _c(
-                            "font",
-                            { staticStyle: { "vertical-align": "inherit" } },
-                            [
-                              _c(
-                                "font",
-                                {
-                                  staticStyle: { "vertical-align": "inherit" }
-                                },
-                                [_vm._v("method")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass:
-                        "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(27)
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "ivu-menu-submenu" }, [
-                  _c("div", { staticClass: "ivu-menu-submenu-title" }, [
-                    _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                      _vm._m(28),
-                      _vm._v(" "),
-                      _c(
-                        "span",
-                        { staticClass: "i-layout-menu-side-title-text" },
-                        [
-                          _c(
-                            "font",
-                            { staticStyle: { "vertical-align": "inherit" } },
-                            [
-                              _c(
-                                "font",
-                                {
-                                  staticStyle: { "vertical-align": "inherit" }
-                                },
-                                [_vm._v("filter")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass:
-                        "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(29)
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "ivu-menu-submenu" }, [
-                  _c("div", { staticClass: "ivu-menu-submenu-title" }, [
-                    _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                      _vm._m(30),
-                      _vm._v(" "),
-                      _c(
-                        "span",
-                        { staticClass: "i-layout-menu-side-title-text" },
-                        [
-                          _c(
-                            "font",
-                            { staticStyle: { "vertical-align": "inherit" } },
-                            [
-                              _c(
-                                "font",
-                                {
-                                  staticStyle: { "vertical-align": "inherit" }
-                                },
-                                [_vm._v("Animation")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass:
-                        "ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(31)
-                ])
-              ]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _vm._m(32)
-      ]
-    )
-  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "span",
-      {
-        staticClass: "ivu-layout-sider-zero-width-trigger",
-        staticStyle: { display: "none" }
-      },
-      [_c("i", { staticClass: "ivu-icon ivu-icon-ios-menu" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "i-layout-sider-logo i-layout-sider-logo-dark" },
-      [
-        _c(
-          "a",
-          {
-            staticClass: "i-link i-link-color",
-            attrs: { href: "/", target: "_self" }
-          },
-          [
-            _c("img", {
-              attrs: {
-                src:
-                  "https://file.iviewui.com/pro-app-dist/img/logo-dark.64bb44d1.png"
-              }
-            })
-          ]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-introduce" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-install" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-changelog" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-layout" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-component" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/login", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v("\n                      登录\n                      "),
-                _c("em", [_vm._v("Login")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/notification", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      通知菜单\n                      "
-                ),
-                _c("em", [_vm._v("Notification")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/calendar", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v("\n                      日历\n                      "),
-                _c("em", [_vm._v("Calendar")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/auth", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v("\n                      鉴权\n                      "),
-                _c("em", [_vm._v("Auth")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/ellipsis", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      文本自动省略号\n                      "
-                ),
-                _c("em", [_vm._v("Ellipsis")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/table-paste", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      粘贴表格数据\n                      "
-                ),
-                _c("em", [_vm._v("TablePaste")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/avatar-list", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      头像列表\n                      "
-                ),
-                _c("em", [_vm._v("AvatarList")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/count-down", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      倒计时\n                      "
-                ),
-                _c("em", [_vm._v("CountDown")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/count-up", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      数字动画\n                      "
-                ),
-                _c("em", [_vm._v("CountUp")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/numeral", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      数字格式化\n                      "
-                ),
-                _c("em", [_vm._v("Numeral")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/number-info", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      数据文本\n                      "
-                ),
-                _c("em", [_vm._v("NumberInfo")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/trend", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      趋势标记\n                      "
-                ),
-                _c("em", [_vm._v("Trend")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/footer-toolbar", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      底部工具栏\n                      "
-                ),
-                _c("em", [_vm._v("FooterToolbar")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/global-footer", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      全局页脚\n                      "
-                ),
-                _c("em", [_vm._v("GlobalFooter")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/word-count", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      字数统计\n                      "
-                ),
-                _c("em", [_vm._v("WordCount")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/result", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v(
-                  "\n                      处理结果\n                      "
-                ),
-                _c("em", [_vm._v("Result")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "ivu-menu-item",
-          staticStyle: { "padding-left": "43px" },
-          attrs: { href: "/pro/component/exception", target: "_self" }
-        },
-        [
-          _c("span", { staticClass: "i-layout-menu-side-title" }, [
-            _c(
-              "span",
-              {
-                staticClass:
-                  "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-              },
-              [
-                _vm._v("\n                      异常\n                      "),
-                _c("em", [_vm._v("Exception")])
-              ]
-            )
-          ])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-directive" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      { staticClass: "ivu-menu", staticStyle: { display: "none" } },
-      [
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/directive/style", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      样式指令\n                      "
-                    ),
-                    _c("em", [_vm._v("v-style")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/directive/resize", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      宽度变化\n                      "
-                    ),
-                    _c("em", [_vm._v("v-resize")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/directive/line-clamp", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      文本按行省略\n                      "
-                    ),
-                    _c("em", [_vm._v("v-line-clamp")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-method" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      { staticClass: "ivu-menu", staticStyle: { display: "none" } },
-      [
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/method/copy", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      复制到剪贴板\n                      "
-                    ),
-                    _c("em", [_vm._v("$Copy")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/method/scroll-top", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      滚动\n                      "
-                    ),
-                    _c("em", [_vm._v("$ScrollTop")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/method/scroll-into-view", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      视图滚动\n                      "
-                    ),
-                    _c("em", [_vm._v("$ScrollIntoView")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/method/date", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      日期操作\n                      "
-                    ),
-                    _c("em", [_vm._v("$Date")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-filter" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      { staticClass: "ivu-menu", staticStyle: { display: "none" } },
-      [
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/filter/date", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      日期\n                      "
-                    ),
-                    _c("em", [_vm._v("filter-date")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "i-layout-menu-side-title-icon" }, [
-      _c("i", { staticClass: "ivu-icon i-pro i-pro-animation" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      { staticClass: "ivu-menu", staticStyle: { display: "none" } },
-      [
-        _c("div", [
-          _c(
-            "a",
-            {
-              staticClass: "ivu-menu-item",
-              staticStyle: { "padding-left": "43px" },
-              attrs: { href: "/pro/animation/base", target: "_self" }
-            },
-            [
-              _c("span", { staticClass: "i-layout-menu-side-title" }, [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "i-layout-menu-side-title-text i-layout-menu-side-title-text-em"
-                  },
-                  [
-                    _vm._v(
-                      "\n                      基础动画\n                      "
-                    ),
-                    _c("em", [_vm._v("Animation")])
-                  ]
-                )
-              ])
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "ivu-layout-sider-trigger",
-        staticStyle: { width: "180px", display: "none" }
-      },
-      [
-        _c("i", {
-          staticClass:
-            "ivu-icon ivu-icon-ios-arrow-back ivu-layout-sider-trigger-icon"
-        })
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -3181,7 +599,9 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layout_vue_vue_type_template_id_369434a1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Layout.vue?vue&type=template&id=369434a1& */ "./resources/js/Layout/Layout.vue?vue&type=template&id=369434a1&");
 /* harmony import */ var _Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout.vue?vue&type=script&lang=js& */ "./resources/js/Layout/Layout.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout.vue?vue&type=style&index=0&lang=css& */ "./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -3189,7 +609,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Layout_vue_vue_type_template_id_369434a1___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Layout_vue_vue_type_template_id_369434a1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -3218,6 +638,22 @@ component.options.__file = "resources/js/Layout/Layout.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Layout.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/Layout.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Layout.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/Layout.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -3319,7 +755,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Sidebar_vue_vue_type_template_id_07ebfd56___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Sidebar.vue?vue&type=template&id=07ebfd56& */ "./resources/js/Layout/partials/Sidebar.vue?vue&type=template&id=07ebfd56&");
 /* harmony import */ var _Sidebar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Sidebar.vue?vue&type=script&lang=js& */ "./resources/js/Layout/partials/Sidebar.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Sidebar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Sidebar.vue?vue&type=style&index=0&lang=css& */ "./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -3327,7 +765,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Sidebar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Sidebar_vue_vue_type_template_id_07ebfd56___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Sidebar_vue_vue_type_template_id_07ebfd56___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -3356,6 +794,22 @@ component.options.__file = "resources/js/Layout/partials/Sidebar.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Sidebar.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/partials/Sidebar.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css& ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./Sidebar.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Layout/partials/Sidebar.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Sidebar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

@@ -3,12 +3,12 @@
     <!-- <el-row>
       <el-col :span="11" class="col-dashboard">
         <el-card>
-          
+
         </el-card>
       </el-col>
       <el-col :span="8" class="col-dashboard">
         <el-card>
-          
+
         </el-card>
       </el-col>
     </el-row>-->
@@ -34,13 +34,6 @@
           </div>
         </b-card>
       </b-col>
-    </b-row>
-    <b-row>
-      <b-card>
-        <div style="width: 28cm; margin: auto">
-          <highcharts :options="options" ref="highcharts"></highcharts>
-        </div>
-      </b-card>
     </b-row>
   </layout>
 </template>

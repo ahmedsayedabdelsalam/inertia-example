@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"69573c9c9bf46d90566f","1":"2ca4174e9ee0d5860390","2":"3a1f8b2dd14b086d0c09","3":"3092108fc4604bac810b","4":"1cdc021ec18fd43cdcc2","5":"7343addfadbaf5a4b8c0","6":"05017c9a43c19871f78c","7":"44248508263b10c99a4f"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"62d012bc489adeed68a6","1":"864c8c7b659fba9d244d","2":"7e108962e963840278b6","3":"7cb8fe20e7239d341d62","4":"61c092cd05509c24360f","5":"f76611c64a495d2faf36","6":"3d245569df2ecc119d1b","7":"eeca6cd485a0075d1d60","8":"899b5467f75632c1fa56"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -104208,64 +104208,72 @@ var map = {
 	"./About": [
 		"./resources/js/Pages/About.vue",
 		0,
-		2
+		3
 	],
 	"./About.vue": [
 		"./resources/js/Pages/About.vue",
 		0,
-		2
+		3
 	],
 	"./Contact": [
 		"./resources/js/Pages/Contact.vue",
 		0,
-		3
+		4
 	],
 	"./Contact.vue": [
 		"./resources/js/Pages/Contact.vue",
 		0,
-		3
+		4
+	],
+	"./Dashboard": [
+		"./resources/js/Pages/Dashboard.vue",
+		0,
+		2
+	],
+	"./Dashboard.vue": [
+		"./resources/js/Pages/Dashboard.vue",
+		0,
+		2
+	],
+	"./InfoBox": [
+		"./resources/js/Pages/InfoBox.vue",
+		5
+	],
+	"./InfoBox.vue": [
+		"./resources/js/Pages/InfoBox.vue",
+		5
 	],
 	"./Users/Create": [
 		"./resources/js/Pages/Users/Create.vue",
 		0,
-		4
+		6
 	],
 	"./Users/Create.vue": [
 		"./resources/js/Pages/Users/Create.vue",
 		0,
-		4
+		6
 	],
 	"./Users/Edit": [
 		"./resources/js/Pages/Users/Edit.vue",
 		1,
 		0,
-		7
+		8
 	],
 	"./Users/Edit.vue": [
 		"./resources/js/Pages/Users/Edit.vue",
 		1,
 		0,
-		7
+		8
 	],
 	"./Users/Index": [
 		"./resources/js/Pages/Users/Index.vue",
 		0,
-		5
+		7
 	],
 	"./Users/Index.vue": [
 		"./resources/js/Pages/Users/Index.vue",
 		0,
-		5
-	],
-	"./Welcome": [
-		"./resources/js/Pages/Welcome.vue",
-		0,
-		6
-	],
-	"./Welcome.vue": [
-		"./resources/js/Pages/Welcome.vue",
-		0,
-		6
+		7
 	]
 };
 function webpackAsyncContext(req) {
@@ -104315,9 +104323,91 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Pagination"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Dialog"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Autocomplete"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Dropdown"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["DropdownMenu"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["DropdownItem"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Menu"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Submenu"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["MenuItem"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["MenuItemGroup"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Input"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["InputNumber"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Radio"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["RadioGroup"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["RadioButton"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Checkbox"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["CheckboxButton"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["CheckboxGroup"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Switch"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Select"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Option"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["OptionGroup"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Button"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["ButtonGroup"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Table"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["TableColumn"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["DatePicker"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["TimeSelect"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["TimePicker"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Popover"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Tooltip"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Breadcrumb"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Form"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["FormItem"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Tabs"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["TabPane"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Tag"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Tree"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Alert"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Slider"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Icon"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Row"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Col"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Upload"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Progress"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Spinner"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Badge"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Card"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Rate"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Steps"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Step"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Carousel"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["CarouselItem"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Collapse"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["CollapseItem"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Cascader"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["ColorPicker"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Transfer"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Container"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Header"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Aside"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Main"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Footer"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Timeline"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["TimelineItem"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Link"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Divider"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Image"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Calendar"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Backtop"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["PageHeader"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["CascaderPanel"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1__["Loading"].directive);
 vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__["InertiaApp"]);
 vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(element_ui__WEBPACK_IMPORTED_MODULE_1___default.a);
 vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.$loading = element_ui__WEBPACK_IMPORTED_MODULE_1__["Loading"].service;
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.$msgbox = element_ui__WEBPACK_IMPORTED_MODULE_1__["MessageBox"];
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.$alert = element_ui__WEBPACK_IMPORTED_MODULE_1__["MessageBox"].alert;
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.$confirm = element_ui__WEBPACK_IMPORTED_MODULE_1__["MessageBox"].confirm;
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.$prompt = element_ui__WEBPACK_IMPORTED_MODULE_1__["MessageBox"].prompt;
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.$notify = element_ui__WEBPACK_IMPORTED_MODULE_1__["Notification"];
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].prototype.$message = element_ui__WEBPACK_IMPORTED_MODULE_1__["Message"];
 var app = document.getElementById('app');
 new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
   render: function render(h) {
@@ -104354,8 +104444,8 @@ new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\inertia-example\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\inertia-example\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/html/inertia-example/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/inertia-example/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
